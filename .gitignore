@@ -1,0 +1,84 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environment (never commit) ---
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+pip-wheel-metadata/
+
+# --- Credentials (NEVER commit) ---
+credentials/
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.secret
+secrets/
+*token*
+
+# --- Large datasets (5–10 GB; not for git) ---
+# If you really want these tracked, use git-lfs (see below), not plain git.
+datasets/
+wnn_connectome_starterpack/
+data/
+*.parquet
+*.h5
+*.hdf5
+*.feather
+*.arrow
+
+# --- Model weights & exports ---
+# Small enough to commit (.pt ~1 MB, .onnx ~1 MB) but large if many experiments.
+# Kept visible so you can decide; uncomment the lines below if you don't want them:
+# *.pt
+# *.pth
+# *.onnx
+# *.ckpt
+# *.safetensors
+
+# --- Arrays / caches ---
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+
+# --- Logs & plots ---
+logs/
+*.log
+nohup.out
+plots/
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Misc large / intermediate ---
+*.zip
+*.tar
+*.tar.gz
+*.7z
+tmp/
+temp/
+.cache/
